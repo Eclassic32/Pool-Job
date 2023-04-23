@@ -1,0 +1,270 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../font/Gilroy-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url("../font/Gilroy-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url("../font/Gilroy-SemiBold.ttf");
+    font-weight: 600;
+}
+
+
+/* MAIN */
+* {
+    color: var(--text-color);
+    font-family: Gilroy;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    padding: 0;
+    margin: 0; 
+    overflow-x: hidden;
+}
+
+:root {
+    --text-color: #163950;
+    --btn-orng-1: #f6c17a;
+    --btn-orng-2: #ed6519;
+    --btn-blue-1: #26c0df;
+    --btn-blue-2: #158ab2;
+    --nav-grey: #afafaf;
+    --nav-blue: #27c1de;
+    --c-orng: #ee6f25;
+    --c-blue: #27c1de;
+    --c-green: #a3d46b;
+    --bg-grey: #f2f2f2;
+
+    --txt-size-large: 33px;
+    --txt-size-big: 23px;
+    --txt-size-mid: 20px;
+    --txt-size-smal: 18px;
+
+    --margin-img: 15px;
+    --margin-large: 60px;
+
+    --padding-form: 40px 45px 40px 75px;
+    --padding-card: 10px;
+}
+
+.d-none {
+    display: none;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    position: relative;
+}
+
+nav img {
+    height: 70px;
+    margin-top: -30px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 60px;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* TEXT */
+h1 {
+    font-size: var(--txt-size-large);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p {
+    width: 40%;
+    margin: 20px  auto;
+}
+
+p strong{
+    font-weight: bold;
+}
+
+h1.wiggly {
+    background-image: url("../img/icons/wave-orange.png");
+    background-repeat: no-repeat;
+    background-position: center 45px;
+    padding-bottom: 40px;
+}
+
+#gains h1.wiggly {
+    background-image: url("../img/icons/wave-white.png");
+}
+
+/* BUTTONS */
+.btn-orange {
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    background: linear-gradient(var(--btn-orng-1), var(--btn-orng-2));
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-orange:hover {
+    transition: all 0.3s ease;
+    background: linear-gradient(var(--btn-blue-1), var(--btn-blue-2));
+}
+
+.btn-blue {
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    background: var(--c-blue);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-blue:hover {
+    transition: all 0.3s ease;
+    background: var(--c-green);
+}
+
+/* BACKGROUND IMAGES */
+.bg-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+}
+
+.bg-img#first {
+    aspect-ratio: 1920/948; 
+    background-image: url("../img/firstA.png");
+} 
+
+.bg-img#break1 {
+    aspect-ratio: 1920/162;
+    background-image: url("../img/break1.png");
+}
+
+.bg-img#cost {
+    background-color: var(--bg-grey);
+}
+
+.bg-img#break2 {
+    aspect-ratio: 1920/162;
+    background-image: url("../img/break2.png");
+}
+
+.bg-img#break3 {
+    aspect-ratio: 1920/162;
+    background-image: url("../img/break3.png");
+}
+
+.bg-img#gains {
+    background-color: var(--c-blue);
+}
+
+.bg-img#break4 {
+    aspect-ratio: 1920/162;
+    background-image: url("../img/break4.png");
+    position: relative;
+    z-index:1;
+}
+
+.bg-img#question {
+    aspect-ratio: 1920/744;
+    background-image: url("../img/questions.png");
+    z-index: 0;
+    position: relative;
+    margin-top: -90px;
+    padding-top: 90px;
+}
+
+.bg-img#contacts {
+    aspect-ratio: 1920/388;
+    background-image: url("../img/map.png");
+}
+
+/* CAROUSEL */
+.carousel{
+    display: flex;
+    justify-content: center;
+}
+
+.carousel li {
+    margin: 0 15px;
+    list-style: none ;
+}
+
+.carousel li img {
+    height: 300px;
+} 
+
+.nav-arrow {
+    height: 40px;
+    width: 40px;
+    margin: 5px ;
+    background-color: white;
+    --btn-color: var(--nav-grey);
+    border: 1px solid var(--nav-grey);
+    border-radius: 50%;
+    outline: none;
+    transition: background-color 0.2s, color 0.2s;
+    cursor: pointer;
+}
+
+.nav-arrow:hover {
+    border: 1px solid white; 
+    background-color: var(--nav-blue);
+    --btn-color: white;
+}
+
+.nav-arrow i {
+    color: var(--btn-color);
+}
+
+/* GAINS */
+#gains h1, #gains h4{
+    color: white;
+}
+
+#gains ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20%;
+}
+
+#gains li {
+    width: 150px;
+}
+
+#gains li img {
+    margin: 20px;
+}
+
+#gains h4{
+    font-size: 16px;
+}
+
+#leaf {
+    position: relative;
+    float: right;
+    right: 44px;
+    margin-top: -380px;
+}

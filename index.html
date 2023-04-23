@@ -1,0 +1,161 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pool</title>
+</head>
+<body>
+    <div class="bg-img" id="first">
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Главная</a></li>
+                <li><a href="#">Товары</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <img src="img/logo.png" alt="Pool Logo">
+            <ul>
+                <li><a href="#">+7 777 777 77 77</a></li>
+                <li><a href="#">+7 777 777 77 77</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h1>Строительство бассейнов</h1>
+            <p><strong>Полный спектр работ: </strong>от проектирования и сдачи "под ключ" до обслуживания или реконструкции вашего бассейна, а также большой выбор товаров</p>
+            <button class="btn-orange">Оставить заявку</button>
+        </div>
+    </div>
+
+    <div id="works"> 
+        <h1 class="wiggly">Наши работы</h1>
+        <ul class="carousel">
+            <li><img src="img/work/1.png" alt="" order="1"></li>
+            <li><img src="img/work/2.png" alt="" order="2"></li>
+            <li><img src="img/work/3.png" alt="" order="3"></li>
+        </ul>
+        <div>
+            <button class="nav-arrow"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="nav-arrow"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <div class="bg-img" id="break1"></div>
+
+    <div class="bg-img" id="cost">
+        <h1>Сколько будет стоить Бассейн</h1>
+        <p>Ответьте на несколько вопросов и наши специалисты отпраят вам смету в течении <strong>1 рабочего дня</strong></p>
+        <div>
+            <!-- flex box? -->
+            <form action="#">
+                <div>
+                    <label for="bowlF">Отделка чаши:</label>
+                    <select name="bowlF" id="bowlF">
+                        <option value="poli" selected>Полипропилен</option>
+                        <option value="one">один</option>
+                        <option value="two">два</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="heatF">Отделка чаши:</label>
+                    <select name="heatF" id="heatF">
+                        <option value="no" selected>Нет</option>
+                        <option value="yes">Да</option>
+                        <option value="three">Три</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="sizeF">Размер бассейна</label>
+                    <input type="range" name="sizeF" id="sizeF">
+                    <output for="sizeF" id="sizeFout">3</output>
+                </div>
+                <button type="submit" class="btn-orange">Оставить заявку</button>
+            </form>
+            <img src="img/cost.png" alt="">
+        </div>
+    </div>
+
+    <div class="bg-img" id="break2"></div>
+
+    <div id="items">
+        <h1 class="wiggly">Товары для бассейна</h1>
+        <!-- Item tabs -->
+        <div>
+            <ul>
+                <li>Все</li>
+                <li>Насосы</li>
+                <li>Нагреватели</li>
+            </ul>
+        </div>
+        <!-- Item cards -->
+        <div class="carousel">
+            <button class="nav-arrow"><i class="fa-solid fa-arrow-left"></i></button>
+            <div order="1">
+                <img src="img/items/1.png" alt="">
+                <h5>Фильтровальная установка Bestway</h5>    
+            </div>
+            <div order="2">
+                <img src="img/items/2.png" alt="">
+                <h5>Фильтровальная установка Bestway</h5>    
+            </div>
+            <div order="1">
+                <img src="img/items/1.png" alt="">
+                <h5>Фильтровальная установка Bestway</h5>    
+            </div>
+            <div order="2">
+                <img src="img/items/2.png" alt="">
+                <h5>Фильтровальная установка Bestway</h5>    
+            </div>
+            <button class="nav-arrow"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <button class="btn-blue">Смотреть все</button>
+    </div>
+
+    <div class="bg-img" id="break3"></div>
+
+    <div class="bg-img" id="gains">
+        <h1 class="wiggly">Что вы получаете?</h1>
+        <ul >
+            <!-- flex box space around? -->
+            <li>
+                <img src="img/icons/research.png" alt="">
+                <h4>Индивидуальное предложение</h4>
+            </li>
+            <li>
+                <img src="img/icons/time-management.png" alt="">
+                <h4>Комплексная поддержка</h4>
+            </li>
+            <li>
+                <img src="img/icons/hand.png" alt="">
+                <h4>Качественные материалы</h4>
+            </li>
+        </ul>
+    </div>
+    <img src="img/leaf.png" alt="" id="leaf">
+
+    <div class="bg-img" id="break4"></div>
+
+    <div class="bg-img" id="question">
+        <h1 class="wiggly">Остались вопросы?</h1>
+        <div class="content">
+        <p>Оставьте заявку и наши специалисты свяжутся с вами в ближайшее время</p>
+            <form action="#" id="questionF">
+                <input type="text" name="nameF" id="nameF" placeholder="Имя">
+                <input type="text" name="nameF" id="nameF" placeholder="Телефон">
+                <button type="submit" class="btn-orange">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="bg-img" id="contacts">
+        <div>
+            <h2>Контакты</h2>
+            <p><i class="fa-solid fa-map-marked"></i>Казахстан, Алматы, Байзакова, 263, 1 этаж, 5 офис</p>
+            <p><i class="fa-solid fa-phone"></i>+7 777 777 77 77, +7 777 777 77 77</p>
+            <a href=""><i class="fa-solid fa-at"></i>imfo@pool.kz</a>
+        </div>
+    </div>
+</body>
+</html>
