@@ -47,10 +47,10 @@
     <div class="bg-img" id="cost">
         <h1>Сколько будет стоить Бассейн</h1>
         <p>Ответьте на несколько вопросов и наши специалисты отпраят вам смету в течении <strong>1 рабочего дня</strong></p>
-        <div>
+        <div style="display: flex;justify-content: space-between;padding: 0 270px;">
             <!-- flex box? -->
             <form action="#">
-                <div>
+                <div class="form-row">
                     <label for="bowlF">Отделка чаши:</label>
                     <select name="bowlF" id="bowlF">
                         <option value="poli" selected>Полипропилен</option>
@@ -58,7 +58,7 @@
                         <option value="two">два</option>
                     </select>
                 </div>
-                <div>
+                <div class="form-row">
                     <label for="heatF">Отделка чаши:</label>
                     <select name="heatF" id="heatF">
                         <option value="no" selected>Нет</option>
@@ -66,14 +66,14 @@
                         <option value="three">Три</option>
                     </select>
                 </div>
-                <div>
-                    <label for="sizeF">Размер бассейна</label>
-                    <input type="range" name="sizeF" id="sizeF">
-                    <output for="sizeF" id="sizeFout">3</output>
+                <div class="form-row">
+                    <label for="sizeF">Размер бассейна:</label>
+                    <input type="range" name="sizeF" id="sizeF" min="1" max="9" step="1" value="7">
+                    <output for="sizeF" id="sizeFout"><span>7x3</span><small>м.</small></output>
                 </div>
                 <button type="submit" class="btn-orange">Оставить заявку</button>
             </form>
-            <img src="img/cost.png" alt="">
+            <img src="img/cost.png" alt="" id="costPool">
         </div>
     </div>
 
@@ -157,5 +157,7 @@
             <a href=""><i class="fa-solid fa-at"></i>imfo@pool.kz</a>
         </div>
     </div>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
