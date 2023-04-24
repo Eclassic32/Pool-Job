@@ -94,6 +94,14 @@ h1 {
     text-transform: uppercase;
 }
 
+h2 {
+    text-align: left;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+
 p {
     width: 40%;
     margin: 20px  auto;
@@ -360,4 +368,31 @@ img#costPool {
     float: right;
     right: 44px;
     margin-top: -380px;
+}
+
+/* CONTACTS */
+#contacts .sq-card {
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    width: 20vw;
+    height: 65%;
+    margin: 20px 0 20px 20%;
+}
+
+#contacts li {
+    display: flex;
+    align-items: center
+}
+
+#contacts p{
+    width: initial;
+    text-align: start;
+    margin: initial;
+}
+
+#contacts i {
+    color: var(--nav-grey);
+    font-size: 25px;
+    margin: 10px;
 }
